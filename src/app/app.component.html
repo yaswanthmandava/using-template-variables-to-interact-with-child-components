@@ -1,0 +1,12 @@
+<h1>
+  {{name}}
+</h1>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<p>Child Count value : {{count}}</p>
+<hello #hc (passingData)="handleReceiveData($event)"></hello>
+
+<button (click)="hc.start()">Start</button>
+<button (click)="hc.stop()">Stop</button>
+<button (click)="hc.reset()">Reset</button>
